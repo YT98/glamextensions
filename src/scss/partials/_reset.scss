@@ -1,0 +1,13 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: $oxygen;
+}
+
+#app {
+    width: 100%;
+    height: auto !important;
+}

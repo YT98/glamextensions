@@ -1,0 +1,62 @@
+.mapcontainer {
+    height: 500px;
+    width: 100%;
+}
+
+.quickinfocontainer {
+    background-color: $light-grey;
+    min-height: 350px;
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.form_container {
+    background-color: $light-beige;
+    min-height: 350px;
+    p {
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    button {
+        background-color: $dark-beige;
+        color: white;
+        border: none;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form_container{
+        min-height: 500px;
+    }
+    .quickinfocontainer {
+        min-height: 0;
+        h1 {
+          margin-left: 15px;
+        }
+        i {
+          margin-left: 15px;
+        }
+        padding-bottom: 10px;
+    }
+}
+
+.label_reset {
+  width: 100%;
+}
+
+.input_sm {
+    border: none;
+    border-bottom: 4px solid $dark-beige;
+    background-color: $light-beige;
+    &:focus{
+        background-color: $dark-beige;
+        color: white;
+    }
+}
+
+.input_la {
+    @extend .input_sm;
+    width: 90%;
+    margin-bottom: 20px;
+}

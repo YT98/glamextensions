@@ -1,0 +1,64 @@
+.nav-logo {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.navbar {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-new {
+	background-color: $light-beige;
+	border-color: $dark-beige;
+  margin-bottom: 0;
+    //font-family: $raleway;
+	.navbar-brand {
+		color: black;
+		&:hover {
+			color: black;
+		}
+		&:focus {
+			color: black;
+		}
+	}
+	.navbar-nav {
+		> li > a {
+			color: black;
+			&:hover {
+				background-color: $dark-beige;
+			}
+			&:focus {
+				background-color: $dark-beige;
+			}
+		}
+		> .active > a {
+			color: black;
+			background-color: $dark-beige;
+			&:hover {
+				color: black;
+				background-color: $dark-beige;
+			}
+			&:focus {
+				color: black;
+				background-color: $dark-beige;
+			}
+		}
+	}
+	.navbar-text {
+		color: black;
+	}
+	.navbar-toggle {
+		border-color: $dark-beige;
+		&:hover {
+			background-color: $dark-beige;
+		}
+		&:focus {
+			background-color: $dark-beige;
+		}
+		.icon-bar {
+			background-color: black;
+		}
+	}
+}
